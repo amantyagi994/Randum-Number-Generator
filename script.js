@@ -33,10 +33,9 @@ function validate_inputs() {
 		v2 = iv2;
 	}
 
-	// console.log(v1, v2);
-	if (v1 == "" || v2 == "") {
+	if (v1 == 0 || v2 == 0) {
 		errMsg.style.display = "block";
-		errMsg.innerHTML = "Please Enter a number";
+		errMsg.innerHTML = "The number should not be 0";
 		errMsg.classList.add("err");
 	} else if (v1 == v2) {
 		errMsg.style.display = "block";
@@ -44,11 +43,10 @@ function validate_inputs() {
 		errMsg.innerHTML =
 			"The difference between the numbers should be more than or equal to 2";
 		// console.log("diff");
-	} else if (v1 == 0 || v2 == 0) {
+	} else if (v1 == "" || v2 == "") {
 		errMsg.style.display = "block";
+		errMsg.innerHTML = "Please Enter a number";
 		errMsg.classList.add("warning");
-		errMsg.innerHTML =
-			"The number should be 0";
 	} else {
 		getnum(v1, v2);
 	}
