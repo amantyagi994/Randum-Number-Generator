@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random Number Generator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="app" id="app">
+			<div class="container">
+				<h2 class="h2">Random Number generator</h2>
+				<div class="input-container">
+					<p>Generate a number between</p>
+					<!-- <label for="n1" class="label"></label> -->
+					<input
+						type="text"
+						id="n1"
+						name="n1"
+						placeholder="Enter first number"
+					/>
+					<p>and</p>
+					<!-- <label for="n2" class="label"></label> -->
+					<input
+						type="text"
+						id="n2"
+						name="n2"
+						placeholder="Enter second number"
+					/>
+				</div>
+
+				<div class="error-msg d-none">Please Enter valid difference</div>
+
+				<div class="num-container d-none"></div>
+
+				<div class="btn-container">
+					<button class="btn btn-getnum">Generate Number</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
