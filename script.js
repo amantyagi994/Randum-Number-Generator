@@ -44,6 +44,11 @@ function validate_inputs() {
 		errMsg.innerHTML =
 			"The difference between the numbers should be more than or equal to 2";
 		// console.log("diff");
+	} else if (v1 == 0 || v2 == 0) {
+		errMsg.style.display = "block";
+		errMsg.classList.add("warning");
+		errMsg.innerHTML =
+			"The number should be 0";
 	} else {
 		getnum(v1, v2);
 	}
